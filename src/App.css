@@ -1,0 +1,122 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@keyframes moveX {
+  0% {
+    transform: translateX(0%);
+    opacity: 70%;
+  }
+  10% {
+    transform: translateX(-10%);
+    opacity: 75%;
+  }
+  20% {
+    transform: translateX(-20%);
+    opacity: 80%;
+  }
+  30% {
+    transform: translateX(-30%);
+    opacity: 85%;
+  }
+  40% {
+    transform: translateX(-40%);
+    opacity: 90%;
+  }
+  50% {
+    transform: translateX(-50%);
+    opacity: 100%;
+  }
+  60% {
+    transform: translateX(-40%);
+    opacity: 90%;
+  }
+  70% {
+    transform: translateX(-30%);
+    opacity: 85%;
+  }
+  80% {
+    transform: translateX(-20%);
+    opacity: 80%;
+  }
+  90% {
+    transform: translateX(-10%);
+    opacity: 75%;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 70%;
+  }
+}
+.infinite-move-in-X {
+  animation: 20s moveX 3s linear infinite;
+}
+@keyframes moveY {
+  0% {
+    transform: translateY(-50%);
+  }
+  20% {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(-20%);
+  }
+  60% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.move-in-y {
+  animation: moveY 2s linear;
+}
+
+@keyframes moveAnotherX {
+  0% {
+    transform: translateX(0%);
+    background-color: rgba(0, 0, 0, 0.185);
+  }
+  20% {
+    background-color: transparent;
+  }
+  50% {
+    transform: translateX(-40%);
+    background-color: transparent;
+  }
+  70% {
+    background-color: transparent;
+  }
+  90% {
+    background-color: rgba(0, 0, 0, 0.055);
+  }
+  100% {
+    transform: translateX(0%);
+    background-color: rgba(0, 0, 0, 0.185);
+  }
+}
+.josephine-font {
+  font-family: "Josefin Sans", sans-serif;
+}
+.before {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh-82px);
+}
+
+.before::before {
+  background-color: rgba(0, 0, 0, 0.185);
+  border-radius: 5%;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  animation: 20s moveAnotherX 3s linear infinite;
+}
