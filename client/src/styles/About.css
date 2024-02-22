@@ -1,53 +1,67 @@
-.about-left {
+.about-left,
+.about-right {
   position: relative;
-  width: 17%;
+  width: 17rem;
   z-index: 1;
 }
 .about-left::before {
   position: absolute;
   content: " ";
-  top: 0%;
+  top: 15%;
   left: -10%;
   width: 80%;
-  height: 70%;
+  height: 40%;
   background-color: #ea4343;
   border-radius: 5px;
   z-index: -1;
   animation: rotateY 10s linear infinite;
 }
+
+.about-right::before {
+  position: absolute;
+  content: " ";
+  top: 20%;
+  right: -14%;
+  width: 80%;
+  height: 50%;
+  background-color: #ea4343;
+  border-radius: 5px;
+  z-index: -1;
+  /* animation: rotateY 10s linear infinite; */
+}
 @keyframes rotateY {
   0% {
-    transform: translateY(80%);
+    transform: translateY(40%);
   }
   50% {
-    transform: translateY(60%);
+    transform: translateY(20%);
   }
   100% {
-    transform: translateY(80%);
+    transform: translateY(40%);
   }
 }
 .about-left::after {
   position: absolute;
   top: 20%;
   content: " ";
-  top: 20%;
+  top: 10%;
   left: -20%;
-  width: 80%;
-  height: 70%;
+  width: 50%;
+  height: 30%;
   background-color: transparent;
   border: 4px solid white;
   border-left: 0px;
   z-index: 2;
-  animation: borderRotate 10s linear infinite;
+  animation: 10s borderRotate 5s linear infinite;
 }
 @keyframes borderRotate {
   0% {
-    width: 80%;
-  }
-  50% {
     width: 50%;
   }
+  50% {
+    width: 30%;
+  }
   100% {
-    width: 80%;
+    width: 50%;
   }
 }

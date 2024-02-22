@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <div>
       <Navbar />
-      <div className="min-h-[calc(100vh-82px)] w-full bg-[#0000003f]">
+      <div className=" flex min-h-[calc(100vh-82px)] w-full bg-[#0000003f]">
         {<Outlet />}
       </div>
     </div>

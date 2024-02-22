@@ -53,7 +53,7 @@ const Navbar = () => {
         {navigators?.map((item, index, array) => (
           <div
             key={index}
-            className="   border border-transparent hover:border-[#b95353b0] hover:bg-[#b95353b0] transition-all duration-300 ease-in rounded-full w-[5rem] h-[5rem] flex justify-center items-center"
+            className="   border border-transparent hover:border-[#b95353b0] hover:bg-[#eee7e7b0] transition-all duration-300 ease-in rounded-full w-[5rem] h-[5rem] flex justify-center items-center"
           >
             <NavLink
               to={item.route}
