@@ -9,7 +9,7 @@ import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 function App() {
   return (
-    <div className="w-full min-h-screen bg-slate-800 text-white">
+    <div className="w-full min-h-screen bg-[#3C3C3C] text-white">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index={true} element={<Home />} />

@@ -44,7 +44,10 @@ const Navbar = () => {
   return (
     <div className="grid grid-cols-3 h-[82px] relative 988px:static bg-white 988px:bg-transparent 988px:grid-cols-4 justify-between px-5   988px:justify-around items-center border-y py-4 988px:py-0  border-y-[#ea434325]">
       <div className="col-span-2 flex 988px:justify-center text-2xl 988px:text-3xl font-semibold 988px:text-white text-[#EA4343]  ">
-        <p>Talha Mehmood</p>
+        <p className="text-[#EA4343] shadow-rose-500">
+          <span className="text-black 988px:text-white">Talha</span>
+          <span className="ml-3 drop-shadow-2xl">Mehmood</span>
+        </p>
       </div>
       <div className="  hidden  988px:col-span-2 988px:flex justify-around text-lg font-semibold">
         {navigators?.map((item, index, array) => (
