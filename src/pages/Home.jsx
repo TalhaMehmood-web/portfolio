@@ -10,7 +10,7 @@ const Home = () => {
           <div className="text-4xl flex flex-1 justify-around flex-col   font-semibold ">
             <p>Hello I,m</p>
             <p className="text-[#EA4343] text-3xl 988px:text-8xl">
-              Talha Mehmood
+              Talha Mehmoo
             </p>
             <p className="text-5xl">Creative Developer</p>
           </div>
